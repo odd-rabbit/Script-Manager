@@ -1,4 +1,4 @@
-# Script-Manager This is a python script manager, allow us to manage scripts easily.
+# Script-Manager This is a python script manager, allow us to manage scripts easily. Not finish yet
 
 Using one .py script to manage many .py scripts. 
 Function including:
