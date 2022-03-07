@@ -1,0 +1,180 @@
+
+2022-03-03 09:29:16.367678
+
+
+2022-03-03 09:29:33.441667
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\CODE\script\script2.py", line 8, in <module>
+    time.sleep(2)
+KeyboardInterrupt
+
+2022-03-03 09:35:52.787824
+
+
+2022-03-03 09:36:10.893630
+
+
+2022-03-03 09:36:27.625286
+
+
+2022-03-03 09:37:46.617068
+
+
+2022-03-03 09:39:23.725228
+
+
+2022-03-03 09:39:35.898650
+
+
+2022-03-03 09:39:48.072073
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\CODE\script\script2.py", line 8, in <module>
+    time.sleep(2)
+KeyboardInterrupt
+
+2022-03-03 09:40:40.206552
+
+
+2022-03-03 09:52:02.491491
+
+
+2022-03-03 09:52:19.245654
+
+
+2022-03-03 09:55:58.399980
+
+
+2022-03-03 09:56:15.147347
+
+
+2022-03-03 09:56:42.355677
+
+
+2022-03-03 09:59:05.352758
+
+
+2022-03-03 10:00:53.604843
+
+
+2022-03-03 10:04:25.439165
+
+
+2022-03-03 10:04:31.734073
+
+
+2022-03-03 10:04:38.010406
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\CODE\script\script2.py", line 8, in <module>
+    time.sleep(2)
+KeyboardInterrupt
+
+2022-03-03 10:05:29.081411
+
+
+2022-03-03 10:14:52.908040
+
+
+2022-03-03 10:59:38.236700
+
+
+2022-03-03 10:59:54.984917
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\CODE\script\script2.py", line 8, in <module>
+    time.sleep(2)
+KeyboardInterrupt
+me.sleep(2)
+KeyboardInterrupt
+
+2022-03-03 11:28:25.757885
+
+
+2022-03-03 11:28:39.376579
+
+
+2022-03-03 11:28:52.931390
+
+
+2022-03-03 11:29:50.586669
+
+
+2022-03-03 11:30:04.178481
+
+
+2022-03-03 11:30:22.068914
+
+
+2022-03-03 11:30:28.352098
+
+
+2022-03-03 11:30:35.789196
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\CODE\script\script2.py", line 8, in <module>
+    time.sleep(2)
+KeyboardInterrupt
+
+2022-03-03 11:40:39.219744
+
+
+2022-03-03 11:40:52.834521
+
+
+2022-03-03 11:41:06.426082
+
+
+2022-03-03 11:41:20.044510
+
+
+2022-03-03 11:41:33.648336
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\CODE\script\script2.py", line 8, in <module>
+    time.sleep(2)
+KeyboardInterrupt
+
+2022-03-07 10:15:44.750523
+
+
+2022-03-07 10:16:41.376206
+
+
+2022-03-07 10:17:15.469272
+
+
+2022-03-07 10:19:15.403171
+
+
+2022-03-07 10:20:03.854779
+
+
+2022-03-07 10:20:31.135925
+
+
+2022-03-07 10:20:41.616752
+
+
+2022-03-07 10:22:59.945983
+
+
+2022-03-07 10:25:56.302188
+
+
+2022-03-07 10:26:11.490449
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\CODE\script\script2.py", line 8, in <module>
+    time.sleep(2)
+KeyboardInterrupt
+
+2022-03-07 10:28:35.982377
+
+
+2022-03-07 10:30:46.989567
+
+
+2022-03-07 10:31:02.161273
+

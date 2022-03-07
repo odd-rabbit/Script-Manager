@@ -5,11 +5,15 @@ from datetime import datetime
 
 
 class LogHandler(object):
+    # This is used to handle the scripts log
     # 这是用来将各个脚本的输出和报错储存到.txt文件中去
     def __init__(self):
         # 设定日志文件路径
+        # initialize log path
         self.log_path = './log/'
     def write_date(self, name):
+        # 在日志前添加日期
+        # add datetime before write
         out_log = open(self.log_path + name[:-3] + '_out.txt', 'a+')
         err_log = open(self.log_path + name[:-3] + '_err.txt', 'a+')
         out_log.write('\n' + str(datetime.now()) + '\n\n')
@@ -27,6 +31,7 @@ class LogHandler(object):
 
     def reset_log(self, name):
         # 重置脚本日志
+        # reset log
         out_log = open(self.log_path + name[:-3] + '_out.txt', 'w')
         err_log = open(self.log_path + name[:-3] + '_err.txt', 'w')
         out_log.write('')
@@ -36,6 +41,7 @@ class LogHandler(object):
 
     def delete_log(self, name):
         # 删除日志
+        # delete log
         os.remove(self.log_path + name[:-3] + '_out.txt')
         os.remove(self.log_path + name[:-3] + '_err.txt')
 
@@ -60,7 +66,7 @@ class ScriptManager(object):
         status = self.processes[name].poll()
         if status is None:
             return True
-        elif status in [0,1]:
+        elif status in [0, 1]:
             return False
         else:
             print('running status error')
@@ -70,8 +76,7 @@ class ScriptManager(object):
         # 获取所有脚本的运行状态 是否正在运行
         # Get a list scripts that currently running
         status = {}
-        time.sleep(0.1)
-
+        # time.sleep(0.1)
         for p in self.processes:
             status[p] = self.get_running_status(p)
         return status
@@ -80,29 +85,40 @@ class ScriptManager(object):
         # 运行脚本
         # run the script
         # To avoid run too many scripts at once
-        time.sleep(1)
         out_log, err_log = self.log.get_log(name)
         command = 'python ' + self.path + name
         self.processes[name] = subprocess.Popen(command, stdout=out_log, stderr=err_log)
-        return True
+        if self.get_running_status(name):
+            return True
+        else:
+            return False
 
     def run_scripts(self, names):
         # 运行列表(names)内所有的脚本
         # run a list of scripts
+        status = {}
         for name in names:
-            if not self.run_script(name):
-                return False
-        return True
+            status[name] = False
+            self.run_script(name)
+            for i in range(5):
+                # print(f'Starting {name}')
+                if self.get_running_status(name):
+                    # print('success')
+                    status[name] = True
+                    break
+                else:
+                    time.sleep(1)
+        return status
 
     def stop_script(self, name):
         # 停止脚本
         # stop the script
         # To avoid close too many scripts at once
-        time.sleep(0.1)
         if name in list(self.processes.keys()):
             self.processes[name].terminate()
+            print(f'Script {name} is terminated.')
         else:
-            print('Script not exist.')
+            print(f'Script {name} not exist.')
             return False
         return True
 
